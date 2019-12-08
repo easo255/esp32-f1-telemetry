@@ -95,19 +95,6 @@ IPAddress ip();
 WiFiUDP Udp;
 int packetSize = 512;
 
-//A two-dimensional array of segment data, in order to display the correct gears at the correct indexes.
-//R, N, 1, 2, 3, 4, 5, 6, 7, 8
-byte gearArray[][7] = {{0,0,0,1,1,0,0},
-                    {0,0,0,1,1,0,1},
-                    {0,0,1,0,0,0,1},
-                    {1,0,1,1,1,1,0},
-                    {1,0,1,1,0,1,1},
-                    {0,1,1,1,0,0,1},
-                    {1,1,0,1,0,1,1},
-                    {1,1,0,1,1,1,1},
-                    {1,0,1,0,0,0,1},
-                    {1,1,1,1,1,1,1}};
-
 unsigned int localPort = 8888; 
  TFT_eSPI tft = TFT_eSPI(135, 240); // Invoke custom library
 
